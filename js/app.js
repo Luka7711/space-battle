@@ -79,12 +79,30 @@ class Aliens {
 	}
 }
 
+
 const a1 = new Aliens();
 const a2 = new Aliens();
 const a3 = new Aliens();
 const a4 = new Aliens();
 const a5 = new Aliens();
 const a6 = new Aliens();
+
+const aliensArray = [];
+
+// for(let i=0; i<1; i++){
+// 	aliensArray.push()
+// }
+aliensArray.push(a1);
+aliensArray.push(a2);
+aliensArray.push(a3);
+aliensArray.push(a4);
+aliensArray.push(a5);
+aliensArray.push(a6);
+
+
+
+console.log(ourShip);
+
 
 
 
