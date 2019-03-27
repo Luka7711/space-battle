@@ -88,33 +88,23 @@ class Alien {
 }
 
 
-const a1 = new Alien();
-const a2 = new Alien();
-const a3 = new Alien();
-const a4 = new Alien();
-const a5 = new Alien();
-const a6 = new Alien();
 
-const aliensArray = [];
+let alienShip = [];
 
-// for(let i=0; i<6; i++){
-// 	aliensArray.push()
-// }
-aliensArray.push(a1);
-aliensArray.push(a2);
-aliensArray.push(a3);
-aliensArray.push(a4);
-aliensArray.push(a5);
-aliensArray.push(a6);
+for(let i=0; i<6;i++){
+alienShip.push(new Alien());
+}
 
 
 
-console.log(ourShip);
-
-ourShip.attack(a2)
 
 
-a2.attack(ourShip)
+console.log(alienShip);
+
+// ourShip.attack(a2)
+
+
+// a2.attack(ourShip)
 
 
 
