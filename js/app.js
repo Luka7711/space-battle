@@ -68,28 +68,36 @@ const ourShip = {
 	hull:20,
 	fireP: 5,
 	accuracy:.7,
+	attack(someAlien) {
+		console.log('ourShip.attack called')
+		console.log(someAlien)
+	}
 
 }
 
-class Aliens {
+class Alien {
 	constructor(){
 		this.hull = Math.floor(Math.random()*(6-3) + 3);
 		this.firePwr = Math.floor(Math.random()*(4-2) + 2);
 		this.acc = Math.random()*(.8-.6)+.6;
 	}
+	attack(theShip) {
+		console.log("attack method called for alien")
+		console.log(theShip)
+	}
 }
 
 
-const a1 = new Aliens();
-const a2 = new Aliens();
-const a3 = new Aliens();
-const a4 = new Aliens();
-const a5 = new Aliens();
-const a6 = new Aliens();
+const a1 = new Alien();
+const a2 = new Alien();
+const a3 = new Alien();
+const a4 = new Alien();
+const a5 = new Alien();
+const a6 = new Alien();
 
 const aliensArray = [];
 
-// for(let i=0; i<1; i++){
+// for(let i=0; i<6; i++){
 // 	aliensArray.push()
 // }
 aliensArray.push(a1);
@@ -103,10 +111,10 @@ aliensArray.push(a6);
 
 console.log(ourShip);
 
+ourShip.attack(a2)
 
 
-
-
+a2.attack(ourShip)
 
 
 
